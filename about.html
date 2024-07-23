@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>About</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/a71f4c40341da83d67d508bf818d0f72?family=Princetown+W01" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Part 1: Navbar Starter Code -->
+  <div class="sidebar">
+    <div class="top">
+      <div class="logo">
+        <a href="index.html"><i class='bx bxs-castle'></i></a>
+        <span>CLEO Palace</span>
+      </div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <div class="user">
+      <i class='bx bx-user-circle' ></i>
+      <div>
+        <p class="bold">Client C.</p>
+        <p>Admin</p>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <a href="index.html">
+          <i class="bx bxs-castle"></i>
+          <span class="nav-item">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="settings.html">
+          <i class='bx bx-cog'></i>
+          <span class="nav-item">settings</span>
+        </a>
+      </li>
+      <li>
+        <a href="groups.html">
+          <i class='bx bxs-group bx-tada' ></i>
+          <span class="nav-item">Groups</span>
+        </a>
+      </li>
+      <li>
+        <a href="about.html">
+          <i class='bx bx-question-mark'></i>
+          <span class="nav-item">About</span>
+        </a>
+      </li>
+      <li><button id="theme-button">Dark Mode</button></li>
+    </ul>
+  </div>
+
+
+  <div class="title-container">
+    <div class="title-items">
+      <h1>What is feminine energy?</h1>
+    </div>
+  </div>
+  <div class="main-img">
+    <div class="img-item1">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/t9506JGYNDs?si=nMEZ029J1Ex4bCp6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+    <!-- Stretch Challenge: Drop Down -->
+  <div class="petition" id="petition">
+
+    <h2 class="subTitle" id="subTitle">Subscribe 📢</h2>
+    <p id="counter">🖊️ 3 people have signed the petition and supports this cause.</p>
+
+    <div class="petition-container">
+
+
+      <div class="petition-para">
+        <!-- info goes here -->
+        <p>🌟 Join Our Community: Subscribe Today! 🌟<br>
+          Are you on a journey of self-discovery, seeking a safe and supportive environment to explore your identity and embrace your feminine energy? Look no further!
+          Our blog is a sanctuary where authenticity thrives, and every voice is celebrated. We're dedicated to creating a nurturing space where you can freely express yourself, 
+          connect with like-minded individuals, and embark on a journey of self-discovery. Join our vibrant community of individuals who are embracing their true selves, empowering one another,
+          and fostering meaningful connections. With insightful articles, empowering stories, and thought-provoking discussions, our blog is your go-to resource for inspiration, guidance, and support.
+          Subscribe today to stay updated on our latest content, exclusive offers, and community events. Together, let's embark on a journey of self-exploration, empowerment, and growth.
+          Your journey starts here. Subscribe now and become a part of our empowering community!
+
+        </p>
+      </div>
+
+      <div class="signatures">      
+        <p>🖊️ Laura from Chicago supports this.</p>
+        <p>🖊️ Sadè from The Bay supports this.</p>
+        <p>🖊️ Elexa from Dalas supports this.</p>
+      </div>
+
+    </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <!-- inputs go here -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city">
+      <button id="sign-now-button">Sign Now</button>
+
+    </form>
+    <!--- Sign Now Button --->
+  </div>
+  
+  <script>
+    let btn = document.querySelector("#btn"); // Corrected the selector
+    let sidebar = document.querySelector(".sidebar"); // Corrected the selector
+
+    btn.onclick = function(){
+      sidebar.classList.toggle('active');
+    }
+  </script>
+
+<script src="sig.js"></script>
+<script src="index.js"></script>
+<script src="toggle.js"></script>
+</body>
+</html>
