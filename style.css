@@ -2,275 +2,29 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background:#b3d7ff;
 }
-
-/* Navbar */
-.navbar1 ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  list-style: none;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  margin: 1px;
-  background-color: lightpink;
-  border-radius: 10px;
+h1{
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff8ad;
+  font-size: 80px;
 }
-
-.navbar1 ul li {
-  display: inline-block;
-  margin: 5px;
-}
-
-.navbar1 ul li a {
-  color: palevioletred;
-  font-size: 16px;
-  text-decoration: none;
-  display: block;
-  font-family: "Twinkle Star", cursive;
-}
-
-.navbar1 ul li a:hover {
-  font-weight: bold;
-  font-size: 20px;
-  color: black;
-}
-
-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color:white;
-  text-align: center;
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  align-items: center;
-  font-family: "Twinkle Star", cursive;
-  color: #ff99cc;
-}
-
-.dark-mode {
-  background-image: linear-gradient(to right, rgb(99, 1, 168), rgb(2, 103, 105));
+h3,h2{
+  font-family: "fisterra-fora", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   color: white;
 }
-.dark-mode ul li a:hover{
-  color: white;
+a{
+  color: #f868b5;
 }
-.dark-mode .navbar1 ul {
-  background-color: black;
+p{
+  color: #f868b5;
 }
-
-.dark-mode .navbar1 ul li a {
-  color:white;
-}
-
-.dark-mode button {
-  background-color: darkslategrey;
-  color: white;
-}
-
-/* Flexbox */
-.title-items {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 20px;
-  font-family: "Princetown W01";
-  color: white;
-  align-items: center;
-  align-content: center;
-}
-
-/* the modal that covers the background and prevents user interactions */
-.modal {
-  display: none; /* hides the modal from view by default*/
-  position: fixed; /* keeps the modal in one place */
-  z-index: 2; /* positions the modal on top of all other elements on the screen */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
-  flex-direction: column; /* these flexbox rules center the content on the screen */
-  align-items: center;
-  justify-content: center;
-}
-
-/* box that contains all the content and images */
-.modal-content {
-  background-color: lightsteelblue;
-  color: black;
-  text-align: center;
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#thanks-modal-content {
-  width: 20rem;
-}
-
-#modal-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.img-animation {
-  animation: scaleAnimation 1s ease;
-}
-
-@keyframes scaleAnimation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-.section {
-  opacity: 0;
-  transform: translateY(50px); /* Initially move sections down */
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.article-container {
-  display: flex;
-  border: none;
-  border-radius: 50px;
-  margin-top: 80px;
-  position: static;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  align-content: center;
-
-}
-
-.img-container img {
-  position: absolute;
-}
-.img-container .img-1{
-  transform: rotate(10deg);
-}
-.img-container .img-2, .img-container img-3{
-  transform: translateY(50px) rotate(5deg);
-}
-
-.article-container button{
-  position: absolute;
-  text-align: center;
-
-}
-
-.main-img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-img {
+#dataImg{
   height: 300px;
-  border-radius: 80px;
-}
-.articleContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin-top: 20px;
-  gap: 20px;
-  color: white;
-  align-items: center
-}
-
-#subTitle {
-  text-align: center;
-  border-radius: 10px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  font-weight:lighter;
-
-}
-
-#subTitle:hover {
-  color: #f3ec2b;
-}
-
-#subForm {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-}
-
-input {
-  display: block;
-  margin: 10px;
-}
-
-.petition-container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  width: 100%;
-  padding-bottom: 50px;
-  padding-right: 100px;
-}
-.petition-para {
-  width: 66%;
-  margin-right: 100px;
-  margin-left: 30px;
-  padding-left: 87px;
-}
-
-.signature {
-  width: 45%;
-  padding-right: 10px;
-}
-
-#counter {
-  text-align: center;
-}
-
-form {
-  display: flex;
-  justify-content: center;
-}
-.sign-now-button {
-  text-align: center;
-}
-
-/* General style set for flex-items */
-.flex-item {
-  background: white;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-.error {
-  border-style: solid;
-  border-width: 2px;
-  border-color: red;
-  color: red; /* Added color property */
+  width: 500px;
+  border-radius: 130px;
 }
