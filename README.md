@@ -1,7 +1,6 @@
 # Cleo Palace
 
-Welcome to Cleo Palace! This website was created during the non-profit organization, CodePath, web developent beginners course. dedicated to exploring and learning about the world of feminine energy. This project aims to educate and inspire women and girls to harness their feminine power for healing, transformation, and empowerment.
-
+Welcome to Cleo Palace! This website was created during CodePath's web development beginners course, a non-profit organization initiative. It is dedicated to exploring and understanding feminine energy. This project aims to educate and inspire women and girls to harness their feminine power for healing, transformation, and empowerment.
 ## Table of Contents
 
 - [Description](#description)
