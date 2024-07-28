@@ -14,53 +14,82 @@
 </head>
 
 <body>  
-  
-  <div class ="header">
-      <img id = 'header-img'src="img1.png" >
-    <div id="pageTitle">
-      <h1> Welcome to Cleo Palace</h1>
-    </div>
-    <div id="header-left">
-      <h3> Explore and learn the world of feminine energy </h3>
-    </div>
-    <div class="header-buttom">
-      <button type="button">oooh this is a button</button>
-      <button type="button">another button!</button>
-    </div>
-    
-  </div>
-  
-  <div id = "About">
-    <h2>About Feminine energy</h2>
-      <p> Feminine energy is a lost art that many women and girls tend to miss out on. It is a powerful force that can be used to heal, transform, and empower.</p>
-  
-  
-  <div id = "Data">
-    <img id="dataImg" src="Dataimg.png">
-    <h3>Data about feminine energy</h3>
-    <h4>The level of the identity crisis</h4>
-  
+  <!-- Part 1: Navbar Starter Code -->
+
+  <div class="navbar">
     <ul>
-      <li> <a href="https://www.phoenix.edu/professional-development/blog/what-is-identity-crisis/"> 37% of teens in 2015 struggled with their identtity. </a></li>
-      <li><a href="https://www.phoenix.edu/professional-development/blog/what-is-identity-crisis/"> 95% of teens reported that they had felt inferior at some point in their lives. </a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Find a power outlet</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="#">Impact</a></li>
+      <!-- Stretch Challenge: Drop Down -->
     </ul>
   </div>
-  <img src="headerImg.png">
-  <p>Here is where you can learn and dive in to that feminine power. This website is used to also influence and motivate through aesthetics.</p>
-  <img id="img2" src="https://i.pinimg.com/564x/fb/f6/d8/fbf6d8e781402de517af65c23a479180.jpg">
-  <p>You can find this through multiple outlets like music, health, fashion, beauty, and more.</p>
-    <h2>Extra knowledge on feminine energy...</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/t9506JGYNDs?si=UskqfDqKJ5ZEPImu&amp;start=68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <h2>Articles</h2>
-  <ul></ul>
-  <a href="https://eunoiaofthesoul.com/light-and-dark-feminine-energy/">Light and dark feminine energy</a>
-  <br>
-  <a href="https://theeverygirl.com/feminine-energy-guide/">The Everygirl’s Complete Guide to Feminine Energy</a>
-  <br>
-  <a href="https://wellnessbyjosie.com/blog/feminine-energy">HOW TO TAP INTO YOUR FEMININE ENERGY FOR OPTIMAL WELLBEING</a>
-  <br>
-  <a href="https://www.brettlarkin.com/feminine-energy-traits/">15 Feminine Energy Traits And How To Cultivate Them</a>
-    </ul>
+
+
+
+  <!-- Part 2: Flexbox Layout Stater Code -->
+
+  <div class ="header-container">
+    <div class="header-item">
+      <img id = 'header-img' src="img1.png" >
+    </div>
+    <div class="header-item">
+      <div id="pageTitle">
+        <h1> Welcome to Cleo Palace</h1>
+      </div>
+      <h3> Explore and learn the world of feminine energy </h3>
+      <div class="header-buttom">
+        <button type="button">oooh this is a button</button>
+        <button type="button">another button!</button>
+       </div>
+    </div>
+  </div>
+  
+  <div class = "Data-container">
+    <div class="data-item">
+      <h3>Data correlated feminine energy</h3>
+      <img id="dataImg" src="Dataimg.png">
+    </div>
+    <div class="data-item">
+      <h4>The level of the identity crisis</h4>
+      <p>Embracing feminine energy can be a powerful tool in resolving identity crises, providing the emotional support and intuition needed to navigate periods of self-doubt and confusion.<br> It aids in the journey of understanding oneself better and the personal Growth by leading to greater self-awareness and personal development.</p>
+      <ul>
+        <li> <a href="https://www.phoenix.edu/professional-development/blog/what-is-identity-crisis/"> 37% of teens in 2015 struggled with their identtity. </a></li>
+        <li><a href="https://www.phoenix.edu/professional-development/blog/what-is-identity-crisis/"> 95% of teens reported that they had felt inferior at some point in their lives. </a></li>
+      </ul>
+    </div>  
+  </div>
+  
+  <div class = "About-container">
+    <div class="About-item">
+      <h2>About Feminine energy</h2>
+        <p> Feminine energy is a lost art that many women and girls tend to miss out on. It is a powerful force that can be used to heal, transform, and empower.</p>
+    </div>
+    <div class="About-item">
+      <img src="headerImg.png">
+      <p>Here is where you can learn and dive into that feminine power. This website is used to also influence and motivate through aesthetics.</p>
+    </div>
+    <div class="About-item">
+      <img id="img2" src="https://i.pinimg.com/564x/fb/f6/d8/fbf6d8e781402de517af65c23a479180.jpg">
+      <p>Feminine energy can be expressed through various outlets such as art, music, fashion, beauty, health practices, and interpersonal relationships.</p>
+    </div>
+    <div class="About-item">
+      <h2>Extra knowledge on feminine energy...</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t9506JGYNDs?si=UskqfDqKJ5ZEPImu&amp;start=68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>  
+  <div class="articles-container">
+    <h2>Articles</h2>
+      <ul>
+        <a href="https://eunoiaofthesoul.com/light-and-dark-feminine-energy/">Light and dark feminine energy</a>
+        <br>
+        <a href="https://theeverygirl.com/feminine-energy-guide/">The Everygirl’s Complete Guide to Feminine Energy</a>
+        <br>
+        <a href="https://wellnessbyjosie.com/blog/feminine-energy">HOW TO TAP INTO YOUR FEMININE ENERGY FOR OPTIMAL WELLBEING</a>
+        <br>
+        <a href="https://www.brettlarkin.com/feminine-energy-traits/">15 Feminine Energy Traits And How To Cultivate Them</a>
+      </ul>
   </div>
   <div class='footer'>
     <p>Learn more<br>Contact us</p>
