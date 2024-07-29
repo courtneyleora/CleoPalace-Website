@@ -14,15 +14,17 @@ Welcome to Cleo Palace! This website was created during CodePath's web developme
 
 ## Description
 
-Feminine energy is a powerful force that is often overlooked. This website provides information, data, and resources to help users understand and cultivate their feminine energy. It includes articles, videos, and links to further resources.
+Cleo Palace aims to provide a platform for users to explore and learn about feminine energy. The website features articles, data, videos, and a petition to support the promotion of feminine energy in various aspects of life. The content is designed to be engaging and informative, fostering a community that values and promotes the qualities of feminine energy.
 
 ## Features
-
-- Informative sections about feminine energy
-- Data and statistics on identity crises among adolescents
-- Embedded YouTube video for additional learning
-- Links to articles on feminine energy
-- Aesthetic images to motivate and influence users
+- **Navbar**: A responsive navigation bar that includes links to the Home page, "Find a power outlet", Articles, Impact, and a Dark Mode toggle button.
+- **Header Section**: Contains a welcoming message, an image, and buttons for interaction.
+- **Data Section**: Presents information and statistics about identity crises and the correlation with feminine energy, including relevant links.
+- **About Section**: Provides a detailed description of feminine energy, its benefits, and how it can be expressed.
+- **Articles Section**: Lists additional resources and articles related to feminine energy, with embedded video content.
+- **Petition Section**: Includes a petition form where users can sign to support the cause, along with a list of current supporters.
+- **Footer**: Contact information and additional links for further learning.
+- **Dark-mode**
 
 ## Installation
 
@@ -52,6 +54,19 @@ This project uses the following external resources:
 - [Google Fonts](https://fonts.googleapis.com/css2?family=Cookie&display=swap) for additional typography
 - [YouTube](https://www.youtube.com) for embedded videos
 - [Phoenix University](https://www.phoenix.edu/professional-development/blog/what-is-identity-crisis/) for data on identity crises
+
+## File structure 
+cleo-palace/
+├── index.html
+├── articles.html
+├── style.css
+├── toggle.js
+├── sig.js
+├── favicon.ico
+├── img1.png
+├── Dataimg.png
+├── headerImg.png
+└── README.md
 
 
 ## Contact
