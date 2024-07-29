@@ -56,17 +56,15 @@ This project uses the following external resources:
 - [Phoenix University](https://www.phoenix.edu/professional-development/blog/what-is-identity-crisis/) for data on identity crises
 
 ## File structure 
-cleo-palace/
-├── index.html
-├── articles.html
-├── style.css
-├── toggle.js
-├── sig.js
-├── favicon.ico
-├── img1.png
-├── Dataimg.png
-├── headerImg.png
-└── README.md
+- index.html: Main HTML file for the homepage.
+- articles.html: HTML file for the articles page.
+- style.css: CSS file for styling the website.
+- toggle.js: JavaScript file for toggling dark mode.
+- sig.js: JavaScript file for handling petition signatures.
+- favicon.ico: Icon file for the website.
+- img1.png, Dataimg.png, headerImg.png: Image files used in the website.
+- README.md: Detailed information about the project.
+
 
 
 ## Contact
