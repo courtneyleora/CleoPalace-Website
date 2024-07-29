@@ -3,7 +3,7 @@
   Note: These rules will be applied to all elements.
 */
 body {
-  margin: 220px;
+  margin: 100px;
   box-sizing: border-box;
   background: #b3d7ff;
   background-image: url('https://i.pinimg.com/originals/68/de/af/68deaf13d153cfba053b750ab40b9b43.png');
@@ -20,8 +20,8 @@ h1 {
   font-family: "Cookie", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #fe4d8b;
-  font-size: 80px;
+  color: #ff5252;
+  font-size: 50px;
 }
 
 h2, h3 {
@@ -89,19 +89,26 @@ button {
   text-align: center;
   padding: 15px 32px;
   cursor: pointer;
+  border-radius: 15px;
+  gap: 10px;
 }
 
 /* Header Styles */
 .header-container {
   padding-top: 10px;
-  background-color: #f1c6c6;
+  background-color: #edfdf2;
   text-align: center;
   margin-bottom: 0px;
   border-radius: 40px;
   border: solid;
   padding-bottom: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-left: 250px;
+  margin-right: 250px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .header-item:nth-of-type(1) {
@@ -150,6 +157,7 @@ iframe {
   text-align: center;
   border: solid;
   background-color: whitesmoke;
+  height: 80px;
 }
 
 /* Part 1: Navbar */
@@ -199,10 +207,7 @@ iframe {
   align-items: center;
   text-align: center;
   flex-wrap: wrap; /* Ensure items wrap if the container is too small */
-  border:none;
-  background-color:#edfdf2;
   margin-top: 20px;
-  border-radius: 20px;
 }
 
 .About-container {
@@ -213,14 +218,16 @@ iframe {
 
 /* Style rules for flex-item 1 */
 .data-item:nth-of-type(1){
-  align-content: center;
 }
+.data-item p{
+  font-size: 15px;
+}
+
 /* Ensure .data-item:nth-of-type(2) and .data-item:nth-of-type(3) are side by side */
 .data-item:nth-of-type(2){
   border: solid;
   border-radius: 30px;
-  border-color: hotpink;
-  background-color: #f7f5f2;
+  background-color: #edfdf2;
   flex: 1;
   min-width: 200px; /* Ensures items don't get too small */
 
@@ -229,7 +236,7 @@ iframe {
 .About-container {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping */
-  gap: 70px; /* Optional: Adjust the gap between items */
+  gap: 10px; /* Optional: Adjust the gap between items */
   flex-direction: row;
   text-align: center;
   justify-content: space-evenly;
@@ -244,22 +251,25 @@ iframe {
   background-color: #edfdf2; 
   padding: 10px; 
   border-radius: 15px; 
-  border: solid;
-  border-color:hotpink ;
 }
+.About-item p{font-size: 15px;}
 
 .articles-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-wrap: wrap; /* Ensure items wrap if the container is too small */
-  border:none;
-  background-color:#edfdf2;
   margin-top: 20px;
-  border-radius: 20px;
 }
+  .article-item:nth-of-type(1),
+  .article-item:nth-of-type(2) {
+    flex: 1; /* Ensure the items take equal space */
+    min-width: 220; /* Prevent items from shrinking too much */
+    max-width: 80%; /* Adjust width to fit in a row */
+  }
+
 /* Style set for all flex-items */
 
 /* Add style to button */
@@ -335,10 +345,7 @@ background-color: #bf088e;
 
 }
 
-.dark-mode .Data-container {
-  background-color:#00262e;
- 
-}
+
 .dark-mode .data-item:nth-of-type(2){
   border-color: #740576;
   background-color: #003c47;
@@ -349,11 +356,37 @@ background-color: #bf088e;
   border-color:#fafafa ;
 }
 
-.dark-mode .articles-container{
-  background-color:#00262e;
-}
-
 .dark-mode .footer{
   background-color: #00262e;
-  color: antiquewhite;
+}
+
+/* Petition container  */
+
+.petition{
+  text-align: center;
+}
+.petition-container{
+  display: flex;
+  flex-direction: row; /* Ensure children are aligned horizontally */
+  padding-bottom: 50px;
+  gap: 20px;
+  width: 100;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+.petition-para{
+  width: 55%;
+  padding-right: 10px;
+}
+.petition-para p{
+  font-size: 15px;
+  text-align:center;
+}
+
+.signatures p{
+  font-size: 10px;
+  width: 45%;
+  padding-right: 10px;
 }
