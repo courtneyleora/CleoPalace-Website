@@ -1,6 +1,5 @@
-
-// Get the theme toggle button
-let themeButton = document.getElementById("theme-button");
+// Get the theme toggle switch
+let themeSwitch = document.getElementById("switch");
 
 // Toggle dark mode function
 const toggleDarkMode = () => {
@@ -8,5 +7,5 @@ const toggleDarkMode = () => {
   document.body.classList.toggle("dark-mode");
 }
 
-// Add event listener to the theme toggle button
-themeButton.addEventListener("click", toggleDarkMode);
+// Add event listener to the theme toggle switch
+themeSwitch.addEventListener("change", toggleDarkMode);
