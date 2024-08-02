@@ -4,7 +4,6 @@
 */
 body {
   margin: 100px;
-  box-sizing: border-box;
   background: #b3d7ff;
   background-image: url('https://i.pinimg.com/originals/68/de/af/68deaf13d153cfba053b750ab40b9b43.png');
   background-size: cover; /* Ensures the background image covers the entire page */
@@ -20,7 +19,7 @@ h1 {
   font-family: "Cookie", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #ff5252;
+  color: #ff7a70;
   font-size: 50px;
 }
 
@@ -100,10 +99,9 @@ button {
   text-align: center;
   margin-bottom: 0px;
   border-radius: 40px;
-  border: solid;
   padding-bottom: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 250px;
   margin-right: 250px;
   align-items: center;
@@ -126,7 +124,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   max-width: 200px;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .header-button {
@@ -528,4 +526,17 @@ background-color: #bf088e;
 #switch:checked ~ .icon--sun {
   transition-delay: 200ms;
   transform: scale(1) rotate(360deg);
+}
+
+
+.revealable{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active{
+  transform: translateY(10px);
+  opacity: 1;
 }

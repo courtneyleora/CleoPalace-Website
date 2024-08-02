@@ -1,17 +1,24 @@
-const sections = document.querySelectorAll('.section');
+let animation = {
+  revealDistance: 150,
+  initialOpacity: 0,
+  transitionDelay: 0,
+  transitionDuration: '2s',
+  transitionProperty: 'all',
+  transitionTimingFunction: 'ease'
+}
 
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY;
+let revealableContainers = document.querySelectorAll('.revealable');
 
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-
-    if (scrollPosition >= sectionTop - window.innerHeight / 2 &&
-        scrollPosition < sectionTop + sectionHeight) {
-      section.classList.add('visible');
+var reveal = ()=>{
+  for(let i = 0; i < revealableContainers.length; i++){
+    let windowHeight = window.innerHeight;
+    let topOfRevealableContainer = revealableContainers[i].getBoundingClientRect().top;
+    if(topOfRevealableContainer < windowHeight - animation.revealDistance){
+      revealableContainers[i].classList.add('active');
     } else {
-      section.classList.remove('visible');
+      revealableContainers[i].classList.remove('active');
     }
-  });
-});
+  }
+}
+
+window.addEventListener('scroll', reveal);
