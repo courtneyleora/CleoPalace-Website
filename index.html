@@ -14,16 +14,20 @@
 </head>
 
 <body>  
+
+  <img id="logo" src="logo.png">
+
   <!-- Part 1: Navbar Starter Code -->
 
   <div class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="#">Find a power outlet</a></li>
-      <li><a href="articles.html">Articles</a></li>
+      <li><a href="#">Find a midwife in your major area</a></li>
+      <li><a href="#About-container">About</a></li>
       <li><a href="#">Impact</a></li>
-      
-      <li>
+      <button id="reduce-motion-button"> Reduce Motion</button>
+    <ul>
+
           <div class="container">
               <label for="switch" class="toggle">
                   <input type="checkbox" class="input" id="switch" />
@@ -38,6 +42,7 @@
                       </svg>
                   </div>
               </label>
+            
           </div>
       </li>      
       <!-- Stretch Challenge: Drop Down -->
@@ -48,69 +53,68 @@
 
   <!-- Part 2: Flexbox Layout Stater Code -->
 
-  <div class ="header-container">
+  <div class ="header-container card">
     <div class="header-item">
-      <h1> Welcome to Cleo Palace</h1>
+      <h1> Empowering Birth</h1>
     </div>
     <div class="header-item">
-      <img id = 'header-img' src="img1.png" >
-      <h3> Explore and learn the world of feminine energy </h3>
+      <img id = 'header-img' src="https://i.pinimg.com/originals/aa/d5/37/aad53716c9df400b07a452e69d8d74bd.jpg" >
+    </div>
+    <div class="header-item">
+      <h3> Activism for Accessible Midwifery Care </h3>
       <div class="header-buttom">
-        <button type="button">oooh this is a button</button>
-        <button type="button">another button!</button>
+        <a href="#petition"><button type="button">Sign-Petition</button></a>
+        <a href="#iframe"><button type="button">Info Vid :)</button></a>
       </div>
     </div>
   </div>
   
-  <div class = "Data-container revealable">
+  <div class = "Data-container revealable card">
     <div class="data-item">
-      <h3>The level of the identity crisis</h3>
-        <p>Embracing feminine energy can be a powerful tool in resolving identity crises, providing the emotional support and intuition needed to navigate periods of self-doubt and confusion.<br> It aids in the journey of understanding oneself better and the personal Growth by leading to greater self-awareness and personal development.</p>
+      <h3>The level of crisis</h3>
+        <p><a href="https://eprints.soton.ac.uk/391219/">Pregnant women should have access to high-quality maternal health care, which is a fundamental human right.</a><a href='https://thelancet.com/journals/lancet/article/PIIS01406736(15)00838-7/fulltext'>However, every day, nearly 830 women die worldwide from preventable causes related to pregnancy and childbirth.</a></p>
+      <ul>
+        <p><a href='https://www.thelancet.com/journals/lancet/article/PIIS01406736(15)00838-7/fulltext'> Acording to Global, regional, and national levels and trends in maternal mortality between 1990 and 2015, The majority of deaths occur in low- and middle-income countries, accountable for 95% of maternal deaths and 90% of all children’s deaths worldwide </a></p>
+      </ul>
     </div>
     <div class="data-item">
-      <h4>Data correlated feminine energy</h4>
-      <img id="dataImg" src="Dataimg.png">
-      <ul>
-        <li> <a href="https://www.phoenix.edu/professional-development/blog/what-is-identity-crisis/"> 37% of teens in 2015 struggled with their identtity. </a></li>
-        <li><a href="https://www.phoenix.edu/professional-development/blog/what-is-identity-crisis/"> 95% of teens reported that they had felt inferior at some point in their lives. </a></li>
-      </ul>
+      <h4>Association between midwifery-led care and emergency Caesarean section</h4>
+      <img id="dataImg" src="midwife_data.jpg">
+      <p><a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10214693/#CR2:~:text=The%20findings%20revealed,in%20the%20analysis.'>The findings revealed that utilising midwifery-led care reduces the odds of emergency Caesarean section by 51% (OR: 0.49, 95% CI: 0.27, 0.72, p < 0.01) as compared to those who did not make use of midwifery-led care. The heterogeneity test indicated I2 = 81.93%</a></p>
+      
     </div>  
+    
   </div>
   
-  <div class = "About-container revealable">
+  <div id="About-container" class = " card About-container revealable">
     <div class="About-item">
-      <h2>About Feminine energy</h2>
-        <p> Feminine energy is a lost art that many women and girls tend to miss out on. It is a powerful force that can be used to heal, transform, and empower.</p>
-    </div>
+      <h2>About midwife care</h2>
+        <p>Midwife care is provided by trained healthcare professionals known as midwives. Midwives are specialized in supporting women through pregnancy, childbirth, and postpartum recovery. They are trained to handle normal, low-risk pregnancies and births, and they focus on a holistic approach to maternal care, emphasizing natural childbirth when possible.</p>      
+        <p>After childbirth, midwives continue to care for the mother and newborn, providing support for breastfeeding, postpartum recovery, and infant care.</p>     </div>
     <div class="About-item">
-      <img src="headerImg.png">
-      <p>Feminine energy can be expressed through various outlets such as art, music, fashion, beauty, health practices, and interpersonal relationships.</p>
-    </div>
-    <div class="About-item">
-      <img id="img2" src="https://i.pinimg.com/564x/fb/f6/d8/fbf6d8e781402de517af65c23a479180.jpg">
-      <p>Here is where you can learn and dive into that feminine power. This website is used to also influence and motivate through aesthetics.</p>
+      <img id="img2" src="https://i.pinimg.com/564x/7a/76/bc/7a76bc0bd4db17bfcc04d2b2f66c5adf.jpg">
+      <p>Here is where you can learn and support the efforts to increasing and providing midwife care for women.</p>
     </div>
   </div>  
-  <div class="articles-container revealable">
+  <div class="articles-container card revealable">
     <div class="article-item">
-      <h2>Extra knowledge on feminine energy...</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/t9506JGYNDs?si=UskqfDqKJ5ZEPImu&amp;start=68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+      <h2>Extra knowledge on midwifery...</h2>
+    <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/SE34K88LUek?si=7CtUUqOM2d-7xEZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
     <div class="article-item">
-    <h2>Articles</h2>
+    <h2>Related Articles</h2>
       <ul>
-        <a href="https://eunoiaofthesoul.com/light-and-dark-feminine-energy/">Light and dark feminine energy</a>
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1595019/">Alarming Racial Differences in Maternal Mortality</a>
         <br>
-        <a href="https://theeverygirl.com/feminine-energy-guide/">The Everygirl’s Complete Guide to Feminine Energy</a>
+        <a href="https://www.who.int/news/item/05-05-2021-new-report-sounds-the-alarm-on-global-shortage-of-900-000-midwives">New report sounds the alarm on global shortage of 900 000 midwives</a>
         <br>
-        <a href="https://wellnessbyjosie.com/blog/feminine-energy">HOW TO TAP INTO YOUR FEMININE ENERGY FOR OPTIMAL WELLBEING</a>
+        <a href="https://collective.coloradotrust.org/stories/for-people-of-color-could-home-births-be-safer-than-hospitals/">For People of Color, Could Home Births Be Safer Than Hospitals?</a>
         <br>
-        <a href="https://www.brettlarkin.com/feminine-energy-traits/">15 Feminine Energy Traits And How To Cultivate Them</a>
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10126442/">Care Providers’ Perspectives on Quality Prenatal Care in High-risk Pregnancies: A Qualitative Study</a>
       </ul>
     </div>
   </div>
 
-  <div class="petition revealable" id="petition">
+  <div id='petition' class="card petition revealable" id="petition">
       
       <h2>Sign Our Petition 📢</h2>
       <div class="petition-container">
@@ -118,8 +122,7 @@
 
         <div class="petition-para">
           <!-- info goes here -->
-          <p>We believe in the transformative power of feminine energy and its potential to create a more balanced, compassionate, and inclusive world. Feminine energy, characterized by traits such as empathy, intuition, creativity, and collaboration, is essential in addressing many of the challenges we face today. Unfortunately, these qualities are often undervalued or overlooked in our society.We call on individuals, organizations, and policymakers to recognize and promote the importance of feminine energy in all areas of life. By signing this petition, you are pledging to support initiatives that foster the development and expression of feminine energy in education, workplaces, communities, and beyond. Together, we can create a world where the unique strengths of feminine energy are celebrated and utilized to their fullest potential, leading to greater equality, understanding, and well-being for all.
-<br>Sign the petition today and help us make a difference!</p>
+          <p>We believe in the transformative power of midwifery care and its potential to ensure safe and empowering birth experiences for all women. Midwives play a crucial role in reducing maternal and infant mortality, especially in underserved communities. However, access to midwifery care remains limited in many areas, leaving countless women without the support they need during one of the most critical times in their lives.<br> We call on healthcare providers, policymakers, and communities to increase the availability of midwifery services and to support the integration of midwives into all aspects of maternal healthcare. By signing this petition, you are pledging to advocate for better access to midwifery care and to help ensure that every woman can experience a safe and dignified birth.<br> Sign the petition today and join us in making a difference for mothers and babies everywhere!</p>
         </div>
 
         <div class="signatures">
@@ -157,7 +160,8 @@
   </div>
   
   <div class='footer'>
-    <p>Learn more<br>Contact us</p>
+    <a href="">Contact us</a><br>
+    <a>© 2024 Cleo Palace. All rights reserved.</a>
   </div>
 <script src="sig.js"></script>
 <script src="toggle.js"></script>

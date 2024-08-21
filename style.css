@@ -2,6 +2,23 @@
   Add style rules for the body of your webpage.
   Note: These rules will be applied to all elements.
 */
+
+#logo {
+  width: 100px;
+  height: 100px;
+  position: fixed; /* Fix the logo to the corner */
+  top: 10px; /* Distance from the top */
+  background-color:#fe86c0;
+  left: 10px; /* Distance from the right */
+  border-radius: 75px;
+}
+
+.dark-mode #logo{
+  background-color: #fed462;
+  border-radius: 75px;
+  
+}
+
 body {
   margin: 100px;
   background: #b3d7ff;
@@ -19,7 +36,7 @@ h1 {
   font-family: "Cookie", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #ff7a70;
+  color: #fe86c0;
   font-size: 50px;
 }
 
@@ -35,21 +52,20 @@ h4 {
 }
 
 a {
-  color: #7eabce;
   text-decoration: none;
   font-size: 25px;
+  color: #db006a;
 }
 
 a:hover {
-  color: #8d6e96;  /* Mouse over link */
   text-decoration: none;
-  font-style: italic;
   font-weight: bold;
   font-size: 20px;
+  color: #5225a7;
 }
 
 a:active {
-  color: #ffffff;  /* Selected link */
+  color: #ffe747;  /* Selected link */
   text-decoration: none;
 }
 
@@ -62,11 +78,6 @@ p {
   background-clip: text;
 }
 
-#dataImg {
-  height: 300px;
-  width: 500px;
-  border-radius: 130px;
-}
 
 /*
   Style Lists: Styles added to the ol or ul style rulesets affect the entire
@@ -81,7 +92,7 @@ ul {
   paragraphs, and links
 */
 button {
-  background-color: #8ae2ff;
+  background-color: #fe86c0;
   border: none;
   color: white;
   font-size: 16px;
@@ -92,57 +103,57 @@ button {
   gap: 10px;
 }
 
+.card {
+  border: none;
+  border-radius: 10px;
+  background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%);
+  background-blend-mode: normal, normal, screen, overlay, normal;
+  box-shadow: 0px 0px 10px 1px #000000;
+}
+
 /* Header Styles */
 .header-container {
-  padding-top: 10px;
-  background-color: #edfdf2;
+  padding-top: 5px;
   text-align: center;
-  margin-bottom: 0px;
-  border-radius: 40px;
   padding-bottom: 20px;
+  margin: 0 auto; /* Centers the header-container horizontally */
   display: flex;
-  flex-direction: row;
-  margin-left: 250px;
-  margin-right: 250px;
+  flex-direction: column;
   align-items: center;
-  align-content: center;
   justify-content: center;
+  max-width: 800px;
+  height: 600px;
+  width: 100%; /* Ensures the container takes the full width available */
 }
 
-.header-item:nth-of-type(1) {
-  width: 50%;
-  float: left;
-}
+  
+  .header-item:nth-of-type(1) {
+    width: 50%;
+    float: left;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .header-item:nth-of-type(2) {
+    width: 50%;
+    float: right;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  #header-img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 75px;
+  }
 
-.header-item:nth-of-type(2) {
-  width: 50%;
-  float: right;
-  margin-left: 80px;
-}
 
-#header-img {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 200px;
-  padding-top: 10px;
-}
-
-.header-button {
-  background-color: #7dc1e0;
-  color: #fff;
-  padding: 20px;
-  border: none;
-  cursor: pointer;
-}
-
-#img2 {
-  height: 300px;
-  border: none;
-  border-radius: 30px;
-}
-.About-item:nth-of-type(2) img{
-  height: 250px;;
-}
 iframe {
   padding-top: 30px;
 }
@@ -153,26 +164,41 @@ iframe {
   bottom: 0;
   width: 100%;
   text-align: center;
-  border: solid;
-  background-color: whitesmoke;
-  height: 80px;
+  border: solid hotpink;
+  background-color: #edfdf2;
+}
+.footer a {
+  color: #fe86c0;
 }
 
-/* Part 1: Navbar */
+
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+  text-align: center;
+  padding-top: 10px 0; /* Adjust padding as needed */
+}
+
 /* General style rule set for all items in ul */
 .navbar ul {
   list-style: none;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  align-content: center;
+  text-align: center;
+  display: flex; /* Use flexbox to center the items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 }
 
 /* Style rule set for individual li */
 .navbar ul li {
-  float: left;
-  margin: 30px;
+  margin: 0 15px; /* Adjust spacing between menu items */
 }
 
 /* Style rule set for individual li link */
@@ -189,8 +215,9 @@ iframe {
 /* Style rule set for hovered link */
 .navbar ul li a:hover {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 18px; /* Adjust size on hover */
 }
+
 
 /* Part 2: Flexbox */
 /* General style rule set for flex container */
@@ -198,15 +225,16 @@ iframe {
 /* General style rule set for flex container */
 .Data-container {
   display: flex;
-  flex-direction: column; /* Ensure children are aligned horizontally */
+  flex-direction: column;
   gap: 20px;
-  padding: 30px;
+  padding: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-wrap: wrap; /* Ensure items wrap if the container is too small */
-  margin-top: 20px;
+  margin-top: 100px;
 }
+
 
 .About-container {
   display: flex;
@@ -216,21 +244,35 @@ iframe {
 
 /* Style rules for flex-item 1 */
 .data-item:nth-of-type(1){
+  
 }
+
+#dataImg {
+  height: 300px;
+  width: 700px;
+}
+
 .data-item p{
   font-size: 15px;
 }
 
 /* Ensure .data-item:nth-of-type(2) and .data-item:nth-of-type(3) are side by side */
-.data-item:nth-of-type(2){
-  border: solid;
+.data-item:nth-of-type(1){
   border-radius: 30px;
-  background-color: #edfdf2;
+  background-color: #feb9b4;
   flex: 1;
   min-width: 200px; /* Ensures items don't get too small */
-
+  font-size: 15px;
 }
 
+
+.dark-mode .data-item:nth-of-type(1){
+  background-color: transparent ;
+}
+
+a{
+  font-size: 15px;
+}
 .About-container {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping */
@@ -241,12 +283,19 @@ iframe {
   margin-top: 40px;
 }
 
+.About-item:nth-of-type(2) img{
+  height: 250px;;
+}
+#img2{
+  width: 500px;
+  border-radius: 30px;
+  height: 400px;
+}
 .About-item:nth-of-type(2),
 .About-item:nth-of-type(3) {
   flex: 1; /* Ensure the items take equal space */
   min-width: 220; /* Prevent items from shrinking too much */
   max-width: 48%; /* Adjust width to fit in a row */
-  background-color: #edfdf2; 
   padding: 10px; 
   border-radius: 15px; 
 }
@@ -254,7 +303,7 @@ iframe {
 
 .articles-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -292,71 +341,6 @@ background-color: #bf088e;
 
 
 }
-.dark-mode #theme-button{
-  background-color:#fecde2;
-  color: #292929;
-  border-color: antiquewhite;
-}
-
-.dark-mode #theme-button:active{
-  background-color:#ffa3e2;
-}
-.dark-mode h1 {
-  color: #f4bdff;
-}
-
-.dark-mode h2, .dark-mode h3 {
-  color: #f3d3e3;
-}
-
- .dark-mode h4 {
-  color: antiquewhite ;
-}
-
-.dark-mode a {
-  color: #b8e0ff;}
-
-.dark-mode a:hover {
-  color: #f4ccff;  /* Mouse over link */
-}
-
-.dark-mode a:active {
-  color: #ffffff;  /* Selected link */
-}
-.dark-mode button{
-  background-color: #fecde2 ;
-  color: #292929;
-  border-color: antiquewhite;
-}
-.dark-mode p {
-  background: linear-gradient(30deg, #ffadc2, #fee1ed, #bef5fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
- .dark-mode .header-container {
-  background-color: #00262e;
-  border-color: antiquewhite;
-}
-.dark-mode .navbar ul li a {
-  color:#f3d3e3;
-
-}
-
-
-.dark-mode .data-item:nth-of-type(2){
-  border-color: #740576;
-  background-color: #003c47;
-}
-.dark-mode .About-item:nth-of-type(2), .dark-mode
-.About-item:nth-of-type(3) {
-  background-color: #00262e; 
-  border-color:#fafafa ;
-}
-
-.dark-mode .footer{
-  background-color: #00262e;
-}
 
 /* Petition container  */
 
@@ -384,7 +368,7 @@ background-color: #bf088e;
 }
 
 .signatures p{
-  font-size: 10px;
+  font-size: 15px;
   width: 45%;
   padding-right: 10px;
 }
@@ -539,4 +523,79 @@ background-color: #bf088e;
 .active{
   transform: translateY(10px);
   opacity: 1;
+}
+
+
+
+.dark-mode .card {
+  
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+
+.dark-mode #theme-button{
+  background-color:#fecde2;
+  color: #292929;
+  border-color: antiquewhite;
+}
+
+.dark-mode #theme-button:active{
+  background-color:#ffa3e2;
+}
+.dark-mode h1 {
+  color: #f4bdff;
+}
+
+.dark-mode h2, .dark-mode h3 {
+  color: #f3d3e3;
+}
+
+ .dark-mode h4 {
+  color: antiquewhite ;
+}
+
+.dark-mode a {
+  color: #b8e0ff;}
+
+.dark-mode a:hover {
+  color: #f4ccff;  /* Mouse over link */
+}
+
+.dark-mode a:active {
+  color: #ffffff;  /* Selected link */
+}
+.dark-mode button{
+  background-color: #fecde2 ;
+  color: #292929;
+  border-color: antiquewhite;
+}
+.dark-mode p {
+  background: linear-gradient(30deg, #ffadc2, #fee1ed, #bef5fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+ .dark-mode .header-container {
+  background-color: #00262e;
+  border-color: antiquewhite;
+}
+.dark-mode .navbar ul li a {
+  color:#f3d3e3;
+
+}
+
+
+.dark-mode .data-item:nth-of-type(2){
+  border-color: #740576;
+}
+.dark-mode .About-item:nth-of-type(2), .dark-mode
+.About-item:nth-of-type(3) {
+  border-color:#fafafa ;
+}
+
+.dark-mode .footer{
+  background-color: #00262e;
 }
