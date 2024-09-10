@@ -1,78 +1,63 @@
-# Cleo Palace
+# Cleo - Empowering Birth through Accessible Midwifery Care
 
-Welcome to Cleo Palace! This website was created during CodePath's web development beginners course, a non-profit organization initiative. It is dedicated to exploring and understanding feminine energy. This project aims to educate and inspire women and girls to harness their feminine power for healing, transformation, and empowerment.
-## Table of Contents
+## Project Overview
 
-- [Description](#description)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+**Cleo** is a web platform that advocates for accessible and empowering birth experiences through midwifery care. The project aims to raise awareness about the global maternal health crisis and promote midwifery as a solution for improving maternal and infant outcomes. The website provides educational resources, video content, related articles, and a petition feature where users can take action by pledging their support for increased access to midwifery services.
 
-## Description
+The mission of Cleo is to advocate for the rights of women, ensuring they receive quality maternal care during pregnancy, childbirth, and postpartum, especially in underserved communities.
 
-Cleo Palace aims to provide a platform for users to explore and learn about feminine energy. The website features articles, data, videos, and a petition to support the promotion of feminine energy in various aspects of life. The content is designed to be engaging and informative, fostering a community that values and promotes the qualities of feminine energy.
+## Key Features
 
-## Features
-- **Navbar**: A responsive navigation bar that includes links to the Home page, "Find a power outlet", Articles, Impact, and a Dark Mode toggle button.
-- **Header Section**: Contains a welcoming message, an image, and buttons for interaction.
-- **Data Section**: Presents information and statistics about identity crises and the correlation with feminine energy, including relevant links.
-- **About Section**: Provides a detailed description of feminine energy, its benefits, and how it can be expressed.
-- **Articles Section**: Lists additional resources and articles related to feminine energy, with embedded video content.
-- **Petition Section**: Includes a petition form where users can sign to support the cause, along with a list of current supporters.
-- **Footer**: Contact information and additional links for further learning.
-- **Dark-mode**
+### 1. **Dynamic Navbar with Theme Toggle and Accessibility Controls**
+   - **Dark Mode Toggle:** Users can switch between light and dark modes for personalized visual comfort.
+   - **Reduce Motion Button:** An option to disable animations for users with motion sensitivity, ensuring an inclusive and accessible web experience.
+   - **Responsive Navigation Links:** Links to essential sections, including "Find a Midwife," "About," "Impact," and a petition-signing section, offering users easy navigation throughout the site.
 
-## Installation
+### 2. **Header Section - Empowering Birth**
+   - A visually engaging header with a hero image and inspiring text.
+   - **Call-to-Action Buttons:** Users can directly access the petition or view an informative video on midwifery by clicking on the buttons below the header.
 
-To run this project locally, follow these steps:
+### 3. **Data and Statistics on Maternal Health**
+   - **Crisis Data:** Displayed statistics about global maternal mortality rates and the positive impact of midwifery care in preventing maternal deaths. Sources are provided through embedded links to authoritative articles and research papers.
+   - **Infographic Integration:** An image showing midwifery's effectiveness in reducing emergency Caesarean sections by 51%, backed by clinical studies.
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/CleoPalace-Website.git
-    ```
+### 4. **About Midwife Care**
+   - **Detailed Description:** This section educates users on what midwife care entails and how it contributes to the well-being of mothers and infants.
+   - **Holistic Approach:** Information on the holistic, patient-centered nature of midwife care, highlighting its emphasis on natural childbirth and postpartum support.
 
-2. Navigate to the project directory:
-    ```bash
-    cd CleoPalace-Website
-    ```
+### 5. **Educational Video & Related Articles**
+   - **Embedded Video:** An informative YouTube video on midwifery and its importance in healthcare.
+   - **Further Reading:** A curated list of articles related to midwifery, maternal health, and disparities in healthcare, offering users the opportunity to explore the topic in depth.
 
-3. Open the `index.html` file in your preferred web browser.
+### 6. **Interactive Petition**
+   - **Petition Sign-Up Form:** Users can sign a petition to advocate for better access to midwifery services. The form collects the user's name, email, and city.
+   - **Real-Time Support Counter:** The number of supporters is dynamically updated and displayed in real-time as new users sign the petition.
+   - **Supporter Testimonials:** Displays the names of recent supporters from various regions, promoting a sense of community and solidarity.
+   - **Thank You Modal:** After signing the petition, users receive a personalized "thank you" message in a modal, accompanied by an image.
 
-## Usage
+### 7. **Footer Section**
+   - Links to contact information and site credits.
+   - A copyright message with the project's ownership and year.
 
-Once you have the project set up, open `index.html` in a web browser to view the website. Explore the different sections to learn about feminine energy, view data on identity crises, watch the embedded video, and read the linked articles.
+## Technologies Used
 
-## Dependencies
+- **HTML5:** For structuring the content of the webpage.
+- **CSS3:** For styling the layout, typography, and responsive design of the site. Includes custom styles for buttons, cards, the petition form, dark mode, and hover effects.
+- **JavaScript:** Used for handling interactive features, including form submission, petition signature count, dark mode toggle, reduce motion button, and modal display.
+  - `toggle.js` handles the dark mode switch.
+  - `sig.js` manages petition signing logic and dynamic updates.
+  - `script.js` manages modal interactions and form validation.
+- **Typekit & Google Fonts:** For custom typography.
+- **Embedded Fonts:** Custom fonts from Google Fonts and Adobe Typekit are used to maintain a consistent and appealing design.
 
-This project uses the following external resources:
+## Installation and Setup
 
-- [Adobe Typekit](https://use.typekit.net/rre7kys.css) for custom fonts
-- [Google Fonts](https://fonts.googleapis.com/css2?family=Cookie&display=swap) for additional typography
-- [YouTube](https://www.youtube.com) for embedded videos
-- [Phoenix University](https://www.phoenix.edu/professional-development/blog/what-is-identity-crisis/) for data on identity crises
+### Prerequisites
+- A modern web browser (Chrome, Firefox, Safari, Edge, etc.)
+- Basic knowledge of HTML, CSS, and JavaScript (for development purposes).
 
-## File structure 
-- **index.html**: Main HTML file for the homepage.
-- **articles.html**: HTML file for the articles page.
-- **style.css**: CSS file for styling the website.
-- **toggle.js**: JavaScript file for toggling dark mode.
-- **sig.js**: JavaScript file for handling petition signatures.
-- **favicon.ico**: Icon file for the website.
-- **img1.png, Dataimg.png, headerImg.png**: Image files used in the website.
-- **README.md**: Detailed information about the project.
-
-
-
-## Contact
-
-If you have any questions or suggestions, feel free to contact the project maintainer:
-
-- **Name**: Courtney Ross
-- **Email**: cross52@student.gsu.edu
-- **GitHub**: [courtneyleora](https://github.com/courtneyleora)
-
-Thank you for visiting Cleo Palace!
+### Local Setup Instructions
+1. **Clone the Repository:**
+   To clone this project to your local machine, run the following command:
+   ```bash
+   git clone https://github.com/yourusername/cleo.git

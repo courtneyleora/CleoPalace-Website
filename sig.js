@@ -1,7 +1,8 @@
-// Query for the button with the id sign-now-button and assign that to the variable signNowButton.
+// Query for the button with the id 'sign-now-button'
 const signNowButton = document.getElementById('sign-now-button');
-
-// TODO: Remove the click event listener that calls addSignature()
+const modal = document.getElementById("thanks-modal"); // Declare modal globally
+const closeModalButton = document.getElementById('close-modal-button');
+let intervalId; // Declare intervalId globally for access in both modal and close button
 
 // TODO: Complete validation form
 const validateForm = (event) => {
@@ -12,20 +13,22 @@ const validateForm = (event) => {
 
   var petitionInputs = document.getElementById("sign-petition").elements;
 
-  // Loop through all inputs
-  for (let i = 0; i < petitionInputs.length; i++) {
-    // Validate the value of each input
-    // If the input we're checking is less than 2 characters, it is invalid.
-    if (petitionInputs[i].value.length < 2) {
-      containsErrors = true;
-      petitionInputs[i].classList.add('error');
-    } else {
-      petitionInputs[i].classList.remove('error');
-    }
+  const person = {
+    email: petitionInputs[1].value,
+    city: petitionInputs[2].value, // Changed to "city" to match addSignature function
+    name: petitionInputs[0].value
+  }
+
+  // Validate the name input
+  if (person.name.length < 2) {
+    containsErrors = true;
+    petitionInputs[0].classList.add('error'); // Only apply error to the name input
+  } else {
+    petitionInputs[0].classList.remove('error');
   }
 
   // Validate email format separately
-  if (!email.value.includes('@') || !email.value.includes('.com')) {
+  if (!person.email.includes('@') || !person.email.includes('.com')) {
     containsErrors = true;
     email.classList.add('error');
   } else {
@@ -34,32 +37,31 @@ const validateForm = (event) => {
 
   // If no errors, call addSignature() and clear fields
   if (!containsErrors) {
-    addSignature();
+    addSignature(person); // Pass the person object to addSignature
     for (let i = 0; i < petitionInputs.length; i++) {
-      petitionInputs[i].value = "";
+      petitionInputs[i].value = ""; // Clear the form fields
     }
+    toggleModal(person); // Show modal with thank you message
   }
 }
 
 // Function to add a signature
-const addSignature = () => {
-  // Get the inputs submitted
-  const name = document.getElementById('name').value;
-  const city = document.getElementById('city').value;
-
-  // Create a new paragraph element
+const addSignature = (person) => {
+  // Create a new paragraph element for the signature
   const newSignature = document.createElement('p');
 
   // Format the signature
-  newSignature.textContent = `🖊️ ${name} from ${city} supports this.`;
+  newSignature.textContent = `🖊️ ${person.name} from ${person.city} supports this.`;
 
-  // Find where the signatures section is and append the new signature there
+  // Append the new signature
   const signaturesSection = document.querySelector('.signatures');
   signaturesSection.appendChild(newSignature);
 
   // Update the counter
   const oldCount = document.getElementById('counter');
-  oldCount.remove();
+  if (oldCount) {
+    oldCount.remove(); // Check if the counter exists before removing
+  }
   count += 1;
   const newCount = document.createElement('p');
   newCount.id = 'counter';
@@ -67,7 +69,41 @@ const addSignature = () => {
   signaturesSection.appendChild(newCount);
 }
 
+// Toggle Modal
+const toggleModal = (person) => {
+  let modalContent = document.getElementById("thanks-modal-content");
+  modal.style.display = 'flex';
+  modalContent.textContent = `Thank you so much ${person.name}! ${person.city} represent!`;
+
+  // Start the image scaling animation
+  intervalId = setInterval(scaleImage, 500);
+
+  setTimeout(() => {
+    modal.style.display = "none";
+    clearInterval(intervalId); // Stop the animation
+  }, 4000); // Set timeout to 4 seconds
+}
+
+// Image scaling function for animation
+let scaleFactor = 1;
+let modalImage = document.querySelector("#thanks-modal img"); // Select the image within the modal
+
+function scaleImage() {
+  if (scaleFactor === 1) {
+    scaleFactor = 0.8;
+  } else {
+    scaleFactor = 1;
+  }
+  modalImage.style.transform = `scale(${scaleFactor})`;
+}
+
 let count = 4; // Initial count (4 people have already signed)
+
+// Close modal on button click
+closeModalButton.addEventListener('click', () => {
+  modal.style.display = "none";
+  clearInterval(intervalId); // Stop the animation when the user manually closes the modal
+});
 
 // Add click event listener to the "Sign Now" button
 signNowButton.addEventListener('click', validateForm);
