@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Cleo** is a web platform that advocates for accessible and empowering birth experiences through midwifery care. The project aims to raise awareness about the global maternal health crisis and promote midwifery as a solution for improving maternal and infant outcomes. The website provides educational resources, video content, related articles, and a petition feature where users can take action by pledging their support for increased access to midwifery services.
+**Cleo** Is a web platform that advocates for accessible and empowering birth experiences through midwifery care. The project aims to raise awareness about the global maternal health crisis and promote midwifery as a solution for improving maternal and infant outcomes. The website provides educational resources, video content, related articles, and a petition feature where users can take action by pledging their support for increased access to midwifery services.
 
 The mission of Cleo is to advocate for the rights of women, ensuring they receive quality maternal care during pregnancy, childbirth, and postpartum, especially in underserved communities.
 
